@@ -1,0 +1,10 @@
+- name: Task Variables
+  hosts: localhost
+  vars:
+        URL: play.example.com
+  tasks:
+    - name: Print Task Variable
+      vars:
+        URL: task.example.com
+      ansible.builtin.debug:
+        msg: URL = {{ URL }} 
