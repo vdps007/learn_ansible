@@ -2,6 +2,8 @@
   hosts: localhost
   vars:
         URL: play.example.com
+  vars_files:
+    - var.yml
   tasks:
     - name: Print Task Variable
       vars:
