@@ -1,4 +1,4 @@
-- name: play Variables
+- name: Play Variables
   host: localhost
   vars:
     URL: play.example.com
