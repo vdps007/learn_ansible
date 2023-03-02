@@ -1,0 +1,12 @@
+- name: Register a Variable
+  hosts: localhost
+  tasks:
+    - name: get uptime output
+      ansible.builtin.shell: uptime
+      rigester: out
+    
+    - name: print the out
+      ansible.builtin.debug:
+        msg: {{out}}
+
+        
