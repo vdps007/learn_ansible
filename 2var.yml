@@ -7,5 +7,5 @@
     
     - name: print the out
       ansible.builtin.debug:
-        msg: "{{ out }}"
+        msg: out = {{ out }}
 
