@@ -6,7 +6,7 @@
     - var.yml
   tasks:
     - name: Print Task Variable
-      vars:
-        URL: task.example.com
+#      vars:
+#        URL: task.example.com
       ansible.builtin.debug:
         msg: URL = {{ URL }} 
